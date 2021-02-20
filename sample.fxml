@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <children>
+      <TextField fx:id="memoryVolumeText" layoutX="14.0" layoutY="31.0" promptText="exp: 4096" text="4096" />
+      <Label layoutX="44.0" layoutY="14.0" text="Memory Volume" />
+      <Label layoutX="218.0" layoutY="14.0" text=" Required OS Memory Volume" />
+      <TextField fx:id="memoryOSText" layoutX="226.0" layoutY="31.0" promptText="exp: 256" text="256" />
+      <TextField fx:id="maxProcessWorktimeText" layoutX="437.0" layoutY="31.0" promptText="exp: 10" text="10" />
+      <Label layoutX="451.0" layoutY="14.0" text="Max Process Worktime" />
+      <Label layoutX="39.0" layoutY="89.0" text="Priorities Quantity" />
+      <TextField fx:id="prioritiesQuantityText" layoutX="14.0" layoutY="106.0" promptText="exp: 32" text="32" />
+      <TextField fx:id="coresQuantityText" layoutX="225.0" layoutY="106.0" promptText="exp: 3" text="5" />
+      <Label layoutX="261.0" layoutY="89.0" text="Cores Quantity" />
+      <TextField fx:id="cpuSpeedText" layoutX="437.0" layoutY="106.0" promptText="exp: 1000 (less - faster)" text="1000" />
+      <Label layoutX="482.0" layoutY="89.0" text="CPU speed" />
+      <TextField fx:id="startingProcessesText" layoutX="226.0" layoutY="200.0" promptText="exp: 10" text="10" />
+      <Label layoutX="251.0" layoutY="183.0" text="Starting Processes" />
+      <Button fx:id="continueButton" layoutX="273.0" layoutY="281.0" mnemonicParsing="false" onAction="#click" prefHeight="48.0" prefWidth="52.0" text="Run" />
+   </children>
+</Pane>

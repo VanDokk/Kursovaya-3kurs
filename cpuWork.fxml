@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="892.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextArea fx:id="coreStatusTextArea" editable="false" layoutX="9.0" layoutY="31.0" prefHeight="146.0" prefWidth="850.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></TextArea>
+      <Label layoutX="397.0" layoutY="14.0" text="Core status" />
+      <TextArea fx:id="memoryTextArea" editable="false" layoutX="9.0" layoutY="209.0" prefHeight="146.0" prefWidth="850.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></TextArea>
+      <Label layoutX="404.0" layoutY="192.0" text="Memory" />
+      <TextArea fx:id="allowedQueueTextArea" editable="false" layoutX="10.0" layoutY="386.0" prefHeight="146.0" prefWidth="850.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></TextArea>
+      <Label layoutX="386.0" layoutY="369.0" text="Allowed Queue" />
+      <TextArea fx:id="rejectedQueueTextArea" editable="false" layoutX="9.0" layoutY="570.0" prefHeight="146.0" prefWidth="850.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="385.0" layoutY="553.0" text="Rejected Queue" />
+      <GridPane layoutX="284.0" layoutY="825.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="addProcessButton" mnemonicParsing="false" onAction="#addProcess" prefHeight="30.0" prefWidth="97.0" text="Add a process" />
+            <Button fx:id="stopEmulationButton" cancelButton="true" disable="true" mnemonicParsing="false" onAction="#stopEmulation" prefHeight="51.0" prefWidth="104.0" text="Stop" GridPane.columnIndex="2" />
+            <Button fx:id="runButton" mnemonicParsing="false" onAction="#startEmulation" prefHeight="30.0" prefWidth="97.0" text="Run" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</Pane>
